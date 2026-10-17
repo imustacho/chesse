@@ -1,0 +1,7 @@
+{
+  "tool": "built-in imagegen",
+  "reference": "assets/references/original-ui.png",
+  "transparent_background": true,
+  "prompt": "Use case: logo-brand. Restore and polish the referenced chesse victory crown as a high-resolution Discord custom emoji, on a truly transparent background. Preserve this exact simple brand silhouette: broad golden-yellow crown with three pointed tips, taller center tip, rounded corners, three large charcoal circular cheese holes on the crown face, and a thick rounded charcoal base band. Golden yellow #F7C948, amber #E3AA22, charcoal #29251E. Clean bold flat illustration, minimal subtle amber shading, smooth crisp edges, generous thick shapes that remain legible at 20px. Single centered crown filling about 85 percent of a square 1024x1024 canvas, full crown visible with safe padding. No face, no cheese cube, no letters, no background, no added jewels, no sparkles, no extra objects. Match the existing reference crown rather than making a new ornate design.",
+  "referenceIcon": "chesse_victory"
+}

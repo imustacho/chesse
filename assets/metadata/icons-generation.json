@@ -1,0 +1,30 @@
+{
+  "tool": "built-in imagegen",
+  "transparent_background": true,
+  "entries": [
+    {
+      "name": "chesse_play",
+      "reference": "assets/references/original-ui.png",
+      "prompt": "Use case: identity-preserve. Restore this exact small chesse icon into a crisp high-resolution image, retaining its original design and golden cheese branding. The exact same golden-yellow rounded right-pointing triangular play button with a simple charcoal chess pawn silhouette centered inside it. Smooth bold edges, no outline around triangle, no extra objects. Transparent background. Golden yellow #F7C948, amber #E3AA22, cream #FFF8E7, charcoal #29251E. Clean smooth contours, bold simple shapes for a 20-pixel Discord emoji, minimal original-brand shading, balanced square composition, full icon visible with safe margin. No lettering, labels, background, decorative extras, watermark or redesign. 1024x1024.",
+      "referenceIcon": "chesse_play"
+    },
+    {
+      "name": "chesse_history",
+      "reference": "assets/references/original-ui.png",
+      "prompt": "Use case: identity-preserve. Restore this exact small chesse icon into a crisp high-resolution image, retaining its original design and golden cheese branding. The exact same circular golden-yellow clock with a bold charcoal counterclockwise circular history arrow around it, simple charcoal clock hands, no digits. Preserve the original arrow shape and clock proportions. Transparent background. Golden yellow #F7C948, amber #E3AA22, cream #FFF8E7, charcoal #29251E. Clean smooth contours, bold simple shapes for a 20-pixel Discord emoji, minimal original-brand shading, balanced square composition, full icon visible with safe margin. No lettering, labels, background, decorative extras, watermark or redesign. 1024x1024.",
+      "referenceIcon": "chesse_history"
+    },
+    {
+      "name": "chesse_piece_pawn",
+      "reference": "assets/references/original-expressions.png",
+      "prompt": "Use case: identity-preserve. Restore this exact small chesse icon into a crisp high-resolution image, retaining its original design and golden cheese branding. The exact same golden-yellow cheese chess pawn with round head, short charcoal neck band, tapered cheese body with amber circular holes, thick charcoal base band and golden rounded bottom base. Preserve the pawn silhouette and bold flat style. Transparent background. Golden yellow #F7C948, amber #E3AA22, cream #FFF8E7, charcoal #29251E. Clean smooth contours, bold simple shapes for a 20-pixel Discord emoji, minimal original-brand shading, balanced square composition, full icon visible with safe margin. No lettering, labels, background, decorative extras, watermark or redesign. 1024x1024.",
+      "referenceIcon": "chesse_piece_pawn"
+    },
+    {
+      "name": "chesse_face_angry",
+      "reference": "assets/references/original-expressions.png",
+      "prompt": "Use case: identity-preserve. Restore this exact small chesse icon into a crisp high-resolution image, retaining its original design and golden cheese branding. The exact same angry golden cheese cube mascot with amber cheese holes, thick charcoal simple face, angry eyebrows, frowning mouth, tilted golden crown with charcoal outline and small red anger symbol at upper right. Preserve original angry expression, silhouette and proportions. Transparent background. Golden yellow #F7C948, amber #E3AA22, cream #FFF8E7, charcoal #29251E. Clean smooth contours, bold simple shapes for a 20-pixel Discord emoji, minimal original-brand shading, balanced square composition, full icon visible with safe margin. No lettering, labels, background, decorative extras, watermark or redesign. 1024x1024.",
+      "referenceIcon": "chesse_face_angry"
+    }
+  ]
+}

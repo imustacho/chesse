@@ -1,0 +1,310 @@
+[
+  {
+    "section": "branding/logos",
+    "file": "branding/logos/chesse-knight.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 534189
+  },
+  {
+    "section": "branding/logos",
+    "file": "branding/logos/chesse-midnight.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 1206339
+  },
+  {
+    "section": "branding/logos",
+    "file": "branding/logos/chesse-royal.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 630770
+  },
+  {
+    "section": "branding/logos",
+    "file": "branding/logos/chesse-sunny.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 1223576
+  },
+  {
+    "section": "branding/icons",
+    "file": "branding/icons/chesse_crown.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 688541
+  },
+  {
+    "section": "branding/icons",
+    "file": "branding/icons/chesse_history.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 816434
+  },
+  {
+    "section": "branding/icons",
+    "file": "branding/icons/chesse_piece_pawn.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 572954
+  },
+  {
+    "section": "branding/icons",
+    "file": "branding/icons/chesse_play.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 647959
+  },
+  {
+    "section": "expressions",
+    "file": "expressions/chesse_face_angry.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 893470
+  },
+  {
+    "section": "expressions",
+    "file": "expressions/chesse_face_blunder.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 862997
+  },
+  {
+    "section": "expressions",
+    "file": "expressions/chesse_face_check.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 946267
+  },
+  {
+    "section": "expressions",
+    "file": "expressions/chesse_face_checkmate.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 826371
+  },
+  {
+    "section": "expressions",
+    "file": "expressions/chesse_face_happy.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 904412
+  },
+  {
+    "section": "expressions",
+    "file": "expressions/chesse_face_lose.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 898569
+  },
+  {
+    "section": "expressions",
+    "file": "expressions/chesse_face_think.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 997796
+  },
+  {
+    "section": "expressions",
+    "file": "expressions/chesse_face_win.png",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 935038
+  },
+  {
+    "section": "emojis",
+    "file": "emojis/chesse_crown.png",
+    "width": 128,
+    "height": 128,
+    "bytes": 8580
+  },
+  {
+    "section": "emojis",
+    "file": "emojis/chesse_face_angry.png",
+    "width": 128,
+    "height": 128,
+    "bytes": 14899
+  },
+  {
+    "section": "emojis",
+    "file": "emojis/chesse_face_check.png",
+    "width": 128,
+    "height": 128,
+    "bytes": 15818
+  },
+  {
+    "section": "emojis",
+    "file": "emojis/chesse_face_lose.png",
+    "width": 128,
+    "height": 128,
+    "bytes": 15054
+  },
+  {
+    "section": "emojis",
+    "file": "emojis/chesse_history.png",
+    "width": 128,
+    "height": 128,
+    "bytes": 12427
+  },
+  {
+    "section": "emojis",
+    "file": "emojis/chesse_piece_pawn.png",
+    "width": 128,
+    "height": 128,
+    "bytes": 9373
+  },
+  {
+    "section": "emojis",
+    "file": "emojis/chesse_play.png",
+    "width": 128,
+    "height": 128,
+    "bytes": 11420
+  },
+  {
+    "section": "chess/pieces/light",
+    "file": "chess/pieces/light/chesse_bishop.png",
+    "width": 256,
+    "height": 256,
+    "bytes": 19491
+  },
+  {
+    "section": "chess/pieces/light",
+    "file": "chess/pieces/light/chesse_king.png",
+    "width": 256,
+    "height": 256,
+    "bytes": 21666
+  },
+  {
+    "section": "chess/pieces/light",
+    "file": "chess/pieces/light/chesse_knight.png",
+    "width": 256,
+    "height": 256,
+    "bytes": 18831
+  },
+  {
+    "section": "chess/pieces/light",
+    "file": "chess/pieces/light/chesse_pawn.png",
+    "width": 256,
+    "height": 256,
+    "bytes": 15422
+  },
+  {
+    "section": "chess/pieces/light",
+    "file": "chess/pieces/light/chesse_queen.png",
+    "width": 256,
+    "height": 256,
+    "bytes": 19768
+  },
+  {
+    "section": "chess/pieces/light",
+    "file": "chess/pieces/light/chesse_rook.png",
+    "width": 256,
+    "height": 256,
+    "bytes": 17818
+  },
+  {
+    "section": "chess/pieces/dark",
+    "file": "chess/pieces/dark/chesse_bishop.png",
+    "width": 256,
+    "height": 256,
+    "bytes": 21904
+  },
+  {
+    "section": "chess/pieces/dark",
+    "file": "chess/pieces/dark/chesse_king.png",
+    "width": 256,
+    "height": 256,
+    "bytes": 26846
+  },
+  {
+    "section": "chess/pieces/dark",
+    "file": "chess/pieces/dark/chesse_knight.png",
+    "width": 256,
+    "height": 256,
+    "bytes": 23139
+  },
+  {
+    "section": "chess/pieces/dark",
+    "file": "chess/pieces/dark/chesse_pawn.png",
+    "width": 256,
+    "height": 256,
+    "bytes": 18971
+  },
+  {
+    "section": "chess/pieces/dark",
+    "file": "chess/pieces/dark/chesse_queen.png",
+    "width": 256,
+    "height": 256,
+    "bytes": 23138
+  },
+  {
+    "section": "chess/pieces/dark",
+    "file": "chess/pieces/dark/chesse_rook.png",
+    "width": 256,
+    "height": 256,
+    "bytes": 20853
+  },
+  {
+    "section": "previews",
+    "file": "previews/board.png",
+    "width": 896,
+    "height": 896,
+    "bytes": 106008
+  },
+  {
+    "section": "previews",
+    "file": "previews/chess-pieces.png",
+    "width": 960,
+    "height": 420,
+    "bytes": 115669
+  },
+  {
+    "section": "previews",
+    "file": "previews/emojis.png",
+    "width": 840,
+    "height": 400,
+    "bytes": 98566
+  },
+  {
+    "section": "previews",
+    "file": "previews/expressions.png",
+    "width": 1000,
+    "height": 540,
+    "bytes": 296740
+  },
+  {
+    "section": "previews",
+    "file": "previews/logos.png",
+    "width": 1200,
+    "height": 380,
+    "bytes": 217353
+  },
+  {
+    "section": "references",
+    "file": "references/chess-pieces.png",
+    "width": 796,
+    "height": 298,
+    "bytes": 250090
+  },
+  {
+    "section": "references",
+    "file": "references/original-expressions.png",
+    "width": 1161,
+    "height": 391,
+    "bytes": 576149
+  },
+  {
+    "section": "references",
+    "file": "references/original-logo.png",
+    "width": 513,
+    "height": 240,
+    "bytes": 136923
+  },
+  {
+    "section": "references",
+    "file": "references/original-ui.png",
+    "width": 649,
+    "height": 369,
+    "bytes": 280229
+  }
+]

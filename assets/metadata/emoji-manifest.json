@@ -1,0 +1,37 @@
+[
+  {
+    "name": "chesse_play",
+    "source": "assets/branding/icons/chesse_play.png",
+    "usage": "Title, Accept, Join game"
+  },
+  {
+    "name": "chesse_piece_pawn",
+    "source": "assets/branding/icons/chesse_piece_pawn.png",
+    "usage": "Make a move"
+  },
+  {
+    "name": "chesse_history",
+    "source": "assets/branding/icons/chesse_history.png",
+    "usage": "Refresh"
+  },
+  {
+    "name": "chesse_face_angry",
+    "source": "assets/expressions/chesse_face_angry.png",
+    "usage": "Decline"
+  },
+  {
+    "name": "chesse_face_lose",
+    "source": "assets/expressions/chesse_face_lose.png",
+    "usage": "Resign"
+  },
+  {
+    "name": "chesse_face_check",
+    "source": "assets/expressions/chesse_face_check.png",
+    "usage": "Check warning"
+  },
+  {
+    "name": "chesse_crown",
+    "source": "assets/branding/icons/chesse_crown.png",
+    "usage": "Winner footer"
+  }
+]

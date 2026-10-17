@@ -1,0 +1,33 @@
+{
+  "tool": "built-in imagegen",
+  "entries": [
+    {
+      "file": "chesse-sunny.png",
+      "transparent_background": false,
+      "reference": "assets/references/original-logo.png",
+      "prompt": "Use case: logo-brand. Create one polished high-resolution Discord bot logo variation for chesse. The input image is the original brand reference, not a layout to reproduce. A bold rounded triangular golden cheese wedge with 3 amber cheese holes, thick smooth charcoal outer contour and a small cream highlight, on a solid warm golden yellow square background. Minimal, playful and instantly readable. Inspired by the first reference logo. Palette exclusively golden yellow #F7C948, amber #E3AA22, cream #FFF8E7 and charcoal #29251E. Friendly flat illustration, restrained original-brand shading, crisp smooth antialiased contours. Square 1024x1024 composition with the emblem centered and ample safe margin for Discord circular avatar cropping, important content inside central 72 percent. No lettering, words, labels, watermark, collage or multiple icons. Preserve original cheese brand character.",
+      "referenceIcon": "logo"
+    },
+    {
+      "file": "chesse-midnight.png",
+      "transparent_background": false,
+      "reference": "assets/references/original-logo.png",
+      "prompt": "Use case: logo-brand. Create one polished high-resolution Discord bot logo variation for chesse. The input image is the original brand reference, not a layout to reproduce. A luminous golden cheese wedge with softly rounded corners and three amber holes on a solid deep charcoal #29251E square background. Minimal cream highlight and subtle warm shading, clean silhouette with no heavy outline. Inspired by the second reference logo. Palette exclusively golden yellow #F7C948, amber #E3AA22, cream #FFF8E7 and charcoal #29251E. Friendly flat illustration, restrained original-brand shading, crisp smooth antialiased contours. Square 1024x1024 composition with the emblem centered and ample safe margin for Discord circular avatar cropping, important content inside central 72 percent. No lettering, words, labels, watermark, collage or multiple icons. Preserve original cheese brand character.",
+      "referenceIcon": "logo"
+    },
+    {
+      "file": "chesse-royal.png",
+      "transparent_background": true,
+      "reference": "assets/references/original-logo.png",
+      "prompt": "Use case: logo-brand. Create one polished high-resolution Discord bot logo variation for chesse. The input image is the original brand reference, not a layout to reproduce. A compact rounded triangular golden cheese wedge with three amber cheese holes and thick charcoal outline, topped with a small simple three-point golden crown with matching charcoal outline. Transparent background. One balanced cohesive emblem, subtle cream highlight. Keep the cheese wedge visually dominant. Palette exclusively golden yellow #F7C948, amber #E3AA22, cream #FFF8E7 and charcoal #29251E. Friendly flat illustration, restrained original-brand shading, crisp smooth antialiased contours. Square 1024x1024 composition with the emblem centered and ample safe margin for Discord circular avatar cropping, important content inside central 72 percent. No lettering, words, labels, watermark, collage or multiple icons. Preserve original cheese brand character.",
+      "referenceIcon": "logo"
+    },
+    {
+      "file": "chesse-knight.png",
+      "transparent_background": true,
+      "reference": "assets/references/original-logo.png",
+      "prompt": "Use case: logo-brand. Create one polished high-resolution Discord bot logo variation for chesse. The input image is the original brand reference, not a layout to reproduce. An unmistakable chess knight silhouette carved from a golden cheese wedge, with a curved horse head, tiny charcoal eye and three amber cheese holes. Compact elegant silhouette, thick smooth charcoal contour and short flat base with a gold stripe. Transparent background. Match the playful golden cheese branding, a clear chess-and-cheese fusion, avoid realism. Palette exclusively golden yellow #F7C948, amber #E3AA22, cream #FFF8E7 and charcoal #29251E. Friendly flat illustration, restrained original-brand shading, crisp smooth antialiased contours. Square 1024x1024 composition with the emblem centered and ample safe margin for Discord circular avatar cropping, important content inside central 72 percent. No lettering, words, labels, watermark, collage or multiple icons. Preserve original cheese brand character.",
+      "referenceIcon": "logo"
+    }
+  ]
+}

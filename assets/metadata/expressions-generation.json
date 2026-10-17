@@ -1,0 +1,48 @@
+{
+  "tool": "built-in imagegen",
+  "transparent_background": true,
+  "entries": [
+    {
+      "file": "chesse_face_happy.png",
+      "reference": "assets/references/original-expressions.png",
+      "prompt": "Use case: identity-preserve. Restore this exact low-resolution chesse cheese mascot into a crisp high-resolution standalone transparent PNG for Discord thumbnail use. Happy smiling cheese face with curved smiling eyes and a small smile. Keep original crown and amber cheese holes. Preserve original silhouette, golden yellow cheese cube, amber holes, thick charcoal face and crown outlines, tilted golden crown, pose and exact expression. Clean smooth antialiased contours and subtle original shading, professional flat illustrated finish matching the source. Generously framed centered full mascot with all accessories and nothing cropped. No text, no background, no redesign, no new objects. 1024x1024.",
+      "referenceIcon": "chesse_face_happy"
+    },
+    {
+      "file": "chesse_face_think.png",
+      "reference": "assets/references/original-expressions.png",
+      "prompt": "Use case: identity-preserve. Restore this exact low-resolution chesse cheese mascot into a crisp high-resolution standalone transparent PNG for Discord thumbnail use. Thinking cheese face with narrowed eyes, raised eyebrow and yellow hand resting under chin. Preserve its original skeptical thoughtful expression. Preserve original silhouette, golden yellow cheese cube, amber holes, thick charcoal face and crown outlines, tilted golden crown, pose and exact expression. Clean smooth antialiased contours and subtle original shading, professional flat illustrated finish matching the source. Generously framed centered full mascot with all accessories and nothing cropped. No text, no background, no redesign, no new objects. 1024x1024.",
+      "referenceIcon": "chesse_face_think"
+    },
+    {
+      "file": "chesse_face_win.png",
+      "reference": "assets/references/original-expressions.png",
+      "prompt": "Use case: identity-preserve. Restore this exact low-resolution chesse cheese mascot into a crisp high-resolution standalone transparent PNG for Discord thumbnail use. Celebrating cheese face with curved happy eyes, open smiling mouth and small gold star sparkles around the crown. Preserve original silhouette, golden yellow cheese cube, amber holes, thick charcoal face and crown outlines, tilted golden crown, pose and exact expression. Clean smooth antialiased contours and subtle original shading, professional flat illustrated finish matching the source. Generously framed centered full mascot with all accessories and nothing cropped. No text, no background, no redesign, no new objects. 1024x1024.",
+      "referenceIcon": "chesse_face_win"
+    },
+    {
+      "file": "chesse_face_lose.png",
+      "reference": "assets/references/original-expressions.png",
+      "prompt": "Use case: identity-preserve. Restore this exact low-resolution chesse cheese mascot into a crisp high-resolution standalone transparent PNG for Discord thumbnail use. Sad cheese face with downcast curved eyes, frowning mouth and one blue tear on its right cheek. Preserve original silhouette, golden yellow cheese cube, amber holes, thick charcoal face and crown outlines, tilted golden crown, pose and exact expression. Clean smooth antialiased contours and subtle original shading, professional flat illustrated finish matching the source. Generously framed centered full mascot with all accessories and nothing cropped. No text, no background, no redesign, no new objects. 1024x1024.",
+      "referenceIcon": "chesse_face_lose"
+    },
+    {
+      "file": "chesse_face_checkmate.png",
+      "reference": "assets/references/original-expressions.png",
+      "prompt": "Use case: identity-preserve. Restore this exact low-resolution chesse cheese mascot into a crisp high-resolution standalone transparent PNG for Discord thumbnail use. Defeated cheese face with two charcoal X eyes and tiny downturned mouth. No punctuation marks. Preserve original silhouette, golden yellow cheese cube, amber holes, thick charcoal face and crown outlines, tilted golden crown, pose and exact expression. Clean smooth antialiased contours and subtle original shading, professional flat illustrated finish matching the source. Generously framed centered full mascot with all accessories and nothing cropped. No text, no background, no redesign, no new objects. 1024x1024.",
+      "referenceIcon": "chesse_face_checkmate"
+    },
+    {
+      "file": "chesse_face_blunder.png",
+      "reference": "assets/references/original-expressions.png",
+      "prompt": "Use case: identity-preserve. Restore this exact low-resolution chesse cheese mascot into a crisp high-resolution standalone transparent PNG for Discord thumbnail use. Confused cheese face with one narrowed eye and one squeezed shut eye, downturned mouth, small reddish tongue/cheek accent on its left side and red-orange question mark to its upper right. Preserve original silhouette, golden yellow cheese cube, amber holes, thick charcoal face and crown outlines, tilted golden crown, pose and exact expression. Clean smooth antialiased contours and subtle original shading, professional flat illustrated finish matching the source. Generously framed centered full mascot with all accessories and nothing cropped. No text, no background, no redesign, no new objects. 1024x1024.",
+      "referenceIcon": "chesse_face_blunder"
+    },
+    {
+      "file": "chesse_face_check.png",
+      "reference": "assets/references/original-expressions.png",
+      "prompt": "Use case: background-extraction / identity-preserve. Restore this exact low-resolution chesse cheese mascot as a crisp high-resolution standalone transparent PNG for a Discord thumbnail. Preserve the exact silhouette, golden yellow cheese cube with amber holes, dark charcoal simple face, tilted golden crown with thick charcoal outline, surprised open round mouth, two black eyes, red-orange exclamation mark on the upper right. Same expression and same branding. Clean smooth antialiased contours, gentle original shading, professional flat illustrated finish, generously framed centered full mascot with nothing cut off. No text, no background, no new objects. 1024x1024.",
+      "referenceIcon": "chesse_face_check"
+    }
+  ]
+}
