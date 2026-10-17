@@ -105,7 +105,7 @@ function getGameButtons(game) {
       new ButtonBuilder()
         .setCustomId(`chess:refresh:${game.id}`)
         .setLabel('Refresh')
-        .setEmoji(brandEmoji('chesse_history', '↻', game.guildId))
+        .setEmoji(brandEmoji('chesse_history', '🔄', game.guildId))
         .setStyle(ButtonStyle.Secondary),
       new ButtonBuilder()
         .setCustomId(`chess:resign:${game.id}`)

@@ -8,6 +8,7 @@
     "start": "node src/index.js",
     "dev": "node --watch src/index.js",
     "register": "node scripts/register-commands.js",
+    "emojis:upload": "node scripts/upload-emojis.js",
     "assets:prepare": "npm run assets:build",
     "assets:build": "node scripts/extract-chess-pieces.js && node scripts/export-emojis.js && node scripts/preview-thumbnails.js && node scripts/preview-logos.js && node scripts/preview-board.js && node scripts/validate-assets.js",
     "assets:pieces": "node scripts/extract-chess-pieces.js",

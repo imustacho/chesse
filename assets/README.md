@@ -17,7 +17,9 @@ One current version per asset. Emoji names remain stable when the images are rep
 
 ## Uploading emojis
 
-Upload every PNG in `emojis/` using its filename without `.png` as the emoji name:
+Recommended: run `npm run emojis:upload` to upload these seven images directly to the bot application. No server ID or server emoji permissions are required. Use `npm run emojis:upload -- --dry-run` to validate local files first, and restart a running bot after uploading. Existing application emoji names are skipped.
+
+For optional manual uploads, use every PNG in `emojis/` with its filename without `.png` as the emoji name:
 
 | Name | Use |
 | --- | --- |

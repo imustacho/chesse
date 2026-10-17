@@ -22,6 +22,7 @@ Fill in `DISCORD_TOKEN` and `DISCORD_CLIENT_ID` in `.env`. Optionally set `DISCO
 
 ```sh
 npm run register
+npm run emojis:upload
 npm start
 ```
 
@@ -31,7 +32,20 @@ Games are stored in memory and reset when the bot restarts.
 
 ## Assets and development
 
-Upload the seven images in `assets/emojis/` using their filenames as emoji names. See [the asset guide](assets/README.md) for the organized artwork and rebuilding instructions.
+See [the asset guide](assets/README.md) for the organized artwork and rebuilding instructions.
+
+### Upload emojis to the bot
+
+```sh
+npm run emojis:upload -- --dry-run
+npm run emojis:upload
+```
+
+The script validates every PNG in `assets/emojis/` before contacting Discord, checks that the token belongs to `DISCORD_CLIENT_ID`, and uploads missing emojis directly to the **bot application**, not to a server. It only needs `DISCORD_TOKEN` and `DISCORD_CLIENT_ID`; `DISCORD_GUILD_ID` is not used.
+
+Existing emoji names are skipped, so rerunning is safe and does not delete or replace anything. Restart a running bot after uploading to refresh its application emoji cache. Application emojis take priority over server emojis. `--dry-run` checks the local files without making Discord requests or requiring credentials.
+
+If an upload fails halfway through, fix the reported issue and rerun the command; completed uploads will be skipped. [Discord application emoji documentation](https://github.com/discord/discord-api-docs/blob/main/developers/resources/emoji.mdx#application-owned-emoji).
 
 ```sh
 npm test

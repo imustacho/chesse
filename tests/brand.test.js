@@ -15,6 +15,10 @@ test('deleted persisted emoji IDs are not sent to Discord and reuploaded emojis 
     const buttons = buildChessPanel(game).components[0].toJSON().components.find(c => c.type === 1).components;
     assert.equal(buttons[1].emoji.name, '✖️');
     assert.equal(buttons[1].emoji.id, undefined);
+    const active = new ChessGame({ id: 'active', guildId: 'g', challenger: { id: 'w' } });
+    active.join({ id: 'b' });
+    const activeButtons = buildChessPanel(active).components[0].toJSON().components.find(c => c.type === 1).components;
+    assert.equal(activeButtons[1].emoji.name, '🔄');
     emojis.set('new-id', { id: 'new-id', name: 'chesse_face_angry', available: true });
     assert.equal(brandEmoji('chesse_face_angry', '✖️', 'g').id, 'new-id');
     emojis.get('new-id').available = false;
