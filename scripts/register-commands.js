@@ -11,7 +11,7 @@ for (const key of requiredEnv) {
 
 const command = new SlashCommandBuilder()
   .setName('chess')
-  .setDescription('Start a chess game or challenge another player.')
+  .setDescription('Open a chesse Activity or play the classic chat board.')
   .addUserOption((option) =>
     option
       .setName('opponent')
@@ -24,5 +24,6 @@ const route = process.env.DISCORD_GUILD_ID
   ? Routes.applicationGuildCommands(process.env.DISCORD_CLIENT_ID, process.env.DISCORD_GUILD_ID)
   : Routes.applicationCommands(process.env.DISCORD_CLIENT_ID);
 
-await rest.put(route, { body: [command.toJSON()] });
+// Upsert only /chess; bulk overwrites would remove Discord's Activity entry point.
+await rest.post(route, { body: command.toJSON() });
 console.log(process.env.DISCORD_GUILD_ID ? 'Server command registered.' : 'Global command registered.');

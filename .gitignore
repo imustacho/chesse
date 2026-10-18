@@ -8,3 +8,5 @@ npm-debug.log*
 *.zip
 chesse-used-emojis-v2/
 chesse-emojis/
+dist/
+data/

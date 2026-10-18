@@ -1,0 +1,48 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fff8e7"><title>chesse · Play together</title></head>
+<body>
+<header class="scene-heading"><div class="wordmark" aria-label="chesse"><img src="./assets/pieces/wn.png" alt=""><span>che<span class="gold">ss</span>e</span></div><button id="settings" class="text-button settings-button" hidden>Room settings</button></header>
+<main class="game-layout" id="scene">
+  <div class="board-frame"><div class="rank-labels" aria-hidden="true"></div><div id="board-controls" role="group" aria-label="Chessboard. Drag a piece or select a piece and destination."></div><div class="file-labels" aria-hidden="true"></div></div>
+  <aside id="lobby" class="main-menu">
+    <img id="menu-face" class="menu-face" src="./assets/expressions/chesse_face_happy.png" alt="">
+    <p id="identity" class="muted">Connecting to Discord…</p>
+    <div id="invitations" aria-live="polite"></div>
+    <nav id="main-menu-actions" class="menu-actions" aria-label="Play menu">
+      <button class="button" id="play-local">Play in this room</button>
+      <button class="button" id="create">Play with a friend</button>
+      <button class="button" id="find">Find players</button>
+      <button class="button quiet" id="browse">Watch a match</button>
+      <button class="button quiet" id="join-menu">Join with a code</button>
+    </nav>
+    <section id="search" class="search" hidden aria-live="polite"><h1 id="search-title">Finding players…</h1><p id="search-description" class="muted"></p><button class="button quiet" data-action="cancel-search">Cancel search</button></section>
+    <button class="text-button" id="players-menu">Players here <span id="people-count"></span></button>
+  </aside>
+  <aside id="game" class="match-panel" hidden>
+    <section class="match-players" aria-label="Players and clocks">
+      <div id="player-black" class="player"></div><p class="versus">VS</p><div id="player-white" class="player"></div>
+      <div class="match-meta"><span id="time-control"></span><span id="room-mode"></span></div>
+    </section>
+    <section class="match-status" aria-label="Game status and controls">
+      <section class="mascot" aria-live="polite"><img id="expression" src="./assets/expressions/chesse_face_happy.png" alt=""><h1 id="status-text">Waiting for a friend.</h1><p id="status-detail"></p></section>
+      <div id="match-actions" class="actions"></div>
+      <div class="room-tools"><button id="flip" class="text-button">Flip board</button><button id="invite" class="text-button">Invite friends</button><button data-action="return-lobby" class="text-button">Lobby</button></div>
+      <div class="match-footer"><p id="last-move" class="muted small"></p><p id="spectator-count" class="muted small"></p></div>
+    </section>
+  </aside>
+</main>
+<dialog id="tables-dialog" aria-labelledby="tables-title"><h2 id="tables-title">Choose a table</h2><div id="rooms"></div><button class="button quiet" data-close="tables-dialog">Back</button></dialog>
+<dialog id="players-dialog" aria-labelledby="players-title"><h2 id="players-title">In your Activity</h2><div id="people"></div><button class="button quiet" data-close="players-dialog">Back</button></dialog>
+<dialog id="join-dialog" aria-labelledby="join-title"><h2 id="join-title">Room code</h2><form id="join-code" class="code-form"><label class="sr-only" for="room-code">Room code</label><input id="room-code" maxlength="8" placeholder="8-character code" required autocomplete="off"><div class="actions"><button class="button" name="intent" value="join-room">Join game</button><button class="button quiet" name="intent" value="watch-room">Watch</button><button type="button" class="button quiet" data-close="join-dialog">Back</button></div></form></dialog>
+<p id="connection" class="connection" role="status" hidden></p>
+<div id="toast" class="toast" role="alert" hidden><img src="./assets/expressions/chesse_face_blunder.png" alt=""><span></span><button aria-label="Dismiss error">×</button></div>
+<dialog id="setup" aria-labelledby="setup-title"><form id="setup-form"><h2 id="setup-title">Room settings</h2><p id="setup-description" class="muted"></p><div id="friend-fields"><label>Room name<input id="room-name" maxlength="40" placeholder="A friendly game"></label><label>Invite a friend<select id="friend"><option value="">Anyone with my code</option></select></label></div>
+  <div class="form-row"><label>Time per player<select id="minutes"><option value="0">Untimed</option><option value="3">3 minutes</option><option value="5">5 minutes</option><option value="10" selected>10 minutes</option><option value="15">15 minutes</option><option value="30">30 minutes</option></select></label><label>Increment<select id="increment"><option value="0">+0 seconds</option><option value="2">+2 seconds</option><option value="5">+5 seconds</option></select></label></div>
+  <label class="checkbox"><input type="checkbox" id="allow-spectators" checked>Let people watch</label><label class="checkbox" id="visibility-field"><input type="checkbox" id="public-room">List this room publicly</label>
+  <p id="settings-note" class="muted small"></p><div class="actions"><button type="button" class="button quiet" id="cancel-setup">Back</button><button class="button" id="save-setup">Create room</button></div></form>
+  <form id="invite-form" hidden><label>Opponent invitation<select id="room-friend"></select></label><button class="button quiet">Update invitation</button></form>
+  <div id="room-sharing" class="sharing" hidden><label for="share-code">ROOM CODE</label><input id="share-code" readonly aria-label="Room code to share"><button id="copy-code" class="text-button">Copy</button></div>
+  <section id="spectator-area" class="room-details"><h3>Spectators</h3><div id="spectators" class="spectators"></div></section>
+</dialog>
+<dialog id="promotion"><h2>Choose your piece.</h2><div class="promotion-options"></div><button class="button quiet" id="cancel-promotion">Cancel</button></dialog>
+<dialog id="confirm"><h2>Resign this game?</h2><p>Your opponent will win.</p><div class="actions"><button class="button quiet" id="cancel-resign">Keep playing</button><button class="button" id="confirm-resign">Resign game</button></div></dialog>
+<script type="module" src="./main.js"></script></body></html>

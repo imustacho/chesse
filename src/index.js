@@ -7,7 +7,10 @@ import {
   TextInputBuilder,
   TextInputStyle,
   ActionRowBuilder,
+  ChannelType,
+  InviteTargetType,
 } from 'discord.js';
+import { buildLauncher } from './ui/launcher.js';
 import { ChessGame, createGameId } from './chess/ChessGame.js';
 import { buildChessPanel } from './ui/components.js';
 import { configureBrand } from './ui/brand.js';
@@ -23,7 +26,7 @@ for (const key of requiredEnv) {
 }
 
 const client = new Client({
-  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildExpressions],
+  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildExpressions, GatewayIntentBits.GuildVoiceStates],
   presence: { status: 'idle' },
 });
 const games = new Map();
@@ -64,6 +67,21 @@ async function handleCommand(interaction) {
     throw new UserFacingError('You cannot challenge a bot. Choose a human player as your opponent.');
   }
 
+  await interaction.deferReply();
+  const voice = interaction.guild?.voiceStates.cache.get(interaction.user.id)?.channel;
+  let inviteUrl, notice;
+  if (voice?.type === ChannelType.GuildVoice) {
+    try {
+      const invite = await voice.createInvite({ targetApplication: process.env.DISCORD_CLIENT_ID, targetType: InviteTargetType.EmbeddedApplication, maxAge: 3600, maxUses: 0, unique: false });
+      inviteUrl = invite.url;
+    } catch {
+      notice = 'A voice invite could not be created. Check Create Invite permission and Activity settings. You can still use Open Activity or Play legacy.';
+    }
+  }
+  await interaction.editReply(buildLauncher({ ownerId: interaction.user.id, opponentId: opponent?.id, voiceId: voice?.id, inviteUrl, notice }));
+}
+
+async function startLegacy(interaction, opponent) {
   const game = new ChessGame({
     id: createGameId(),
     guildId: interaction.guildId,
@@ -79,6 +97,17 @@ async function handleCommand(interaction) {
 }
 
 async function handleButton(interaction) {
+  if (interaction.customId === 'activity:launch') {
+    await interaction.launchActivity();
+    return;
+  }
+  if (interaction.customId.startsWith('activity:legacy:')) {
+    const [, , ownerId, opponentId] = interaction.customId.split(':');
+    if (interaction.user.id !== ownerId) throw new UserFacingError('Only the challenger can open this legacy game. Use /chess to create your own.');
+    const opponent = opponentId === 'open' ? null : await client.users.fetch(opponentId);
+    await startLegacy(interaction, opponent);
+    return;
+  }
   const [scope, action, gameId] = interaction.customId.split(':');
   if (scope !== 'chess') return;
 

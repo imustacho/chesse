@@ -7,6 +7,9 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "node --watch src/index.js",
+    "activity:build": "vite build --config activity/vite.config.js && node scripts/build-activity-assets.js",
+    "activity:start": "node src/activity/server.js",
+    "activity:preview": "node scripts/preview-activity.js",
     "register": "node scripts/register-commands.js",
     "emojis:upload": "node scripts/upload-emojis.js",
     "assets:prepare": "npm run assets:build",
@@ -18,12 +21,18 @@
     "test": "node --test"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.12.0"
   },
   "dependencies": {
+    "@discord/embedded-app-sdk": "^2.5.0",
     "@napi-rs/canvas": "^1.0.11",
     "chess.js": "^1.4.0",
     "discord.js": "^14.25.1",
-    "dotenv": "^17.2.2"
+    "dotenv": "^17.2.2",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
   }
 }

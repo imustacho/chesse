@@ -1,17 +1,19 @@
 # 🧀 chesse
 
-A cheese-themed Discord chess bot built with discord.js, Components v2, and Canvas.
+A cheese-themed Discord chess bot and multiplayer Discord Activity, built with discord.js, Components v2, Canvas, and the Embedded App SDK.
 
 ## Features
 
-- Public games and direct player challenges with `/chess`.
+- `/chess` offers a voice Activity invite and **Play legacy**.
+- Activity lobby with friend invitations, player matchmaking across Discord instances, room settings and spectator access.
+- Cream-and-gold board with drag-and-drop pieces, real player names, server clocks, legal moves, promotion, draws and rematches. Both players ready up before a match starts. No Canvas in the Activity.
 - Image-based boards with custom cheese pieces.
 - SAN and coordinate moves, checkmate, draws, and resignations.
 - Custom emojis, high-resolution thumbnails, and private error messages.
 
 ## Setup
 
-Requires Node.js 20 or later.
+Requires Node.js 22.12 or later (Node 24 recommended).
 
 ```sh
 npm install
@@ -26,9 +28,19 @@ npm run emojis:upload
 npm start
 ```
 
-Use `/chess` to open a game or `/chess opponent:@player` to challenge someone. Enter moves such as `e4`, `Nf3`, `O-O`, or `e2e4` through **Make a move**.
+Use `/chess` to choose Activity or **Play legacy**. Join a voice channel first to get a voice invite. `/chess opponent:@player` preserves direct challenges in legacy mode. Enter legacy moves such as `e4`, `Nf3`, `O-O`, or `e2e4` through **Make a move**.
 
-Games are stored in memory and reset when the bot restarts.
+Legacy games are stored in memory and reset when the bot restarts. Activity games are saved to disk per Discord instance.
+
+## Activity setup
+
+The Activity needs its own HTTPS endpoint, a Developer Portal URL Mapping, Activities enabled, and `DISCORD_CLIENT_SECRET` in `.env`. See the [complete setup and manual launch guide](docs/activity.md).
+
+```sh
+npm run activity:build
+```
+
+Building does **not** start either service. When configured and ready, start the backend with `npm run activity:start`, and run only one copy of the bot with `npm start`.
 
 ## Assets and development
 
